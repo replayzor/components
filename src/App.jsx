@@ -1,4 +1,6 @@
 import { useState } from "react";
+
+// components
 import Dropdown from "./components/Dropdown";
 
 function App() {
@@ -15,7 +17,9 @@ function App() {
 	];
 
 	return (
-		<Dropdown options={options} value={selection} onChange={handleSelect} />
+		<div className="flex m-4 gap-4 flex-wrap justify-center">
+			<Dropdown options={options} value={selection} onChange={handleSelect} />
+		</div>
 	);
 }
 
